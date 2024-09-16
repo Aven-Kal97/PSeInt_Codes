@@ -1,0 +1,23 @@
+Algoritmo interes_compuesto
+	//A = Capital de inversion, B = Plazo a meses, C= tasa mensual autorizada, D = resultado, E = entero donde desglozaremos la la funcion para la tabla // 
+	definir A,B,C,D como real;
+	definir E como entero;
+	escribir "Este programa calculara la tasa anual";
+	escribir "Ingrese el capital inicial";
+	leer A;
+	escribir "Introduzca el plazo a meses ";
+	leer B;
+	escribir "Introduzca la taza anual";
+	Leer C;
+	C <- C/100;
+	D <- A * (1 + C)^(B/12);
+	escribir "Este el resultado de la taza anual";
+	escribir D;
+	escribir "En esta tabla mostraremos el rendimiento por mes";
+	para E <- 1 hasta  B hacer;
+		D <- A * (1 + C)^(E/12);
+		Escribir "En el mes"," ", E " ", "el rendimiento fue"," ","="," ", D;
+	FinPara
+	
+	
+FinAlgoritmo
