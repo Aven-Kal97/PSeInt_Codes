@@ -1,0 +1,16 @@
+Algoritmo precio_de_boleto_por_edad
+    Definir Edades Como Entero;
+    Escribir "Ingresa tu edad:";
+    Leer Edades;
+    Si Edades < 12 Entonces
+        Escribir "Eres un niño y pagas 40 pesos por tu boleto ";
+    Sino
+        Si Edades = 12 Y Edades <= 59 Entonces
+            Escribir "Eres un adulto y pagas 70 pesos por tu boleto ";
+        Sino
+            Si Edades >= 60 Entonces
+                Escribir "Eres un adulto mayor y pagas 50 pesos por tu boleto";
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
